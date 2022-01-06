@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="text">
+        <form class="submit">
+          <input
+            id="city-name"
+            type="text"
+            name="textInput"
+            placeholder="jostejo.."
+          />
+          <button id="get">
+            <i
+              class="fa fa-search"
+              style="font-size: 1rem; color: aliceblue"
+            ></i>
+          </button>
+        </form>
+        <div class="text--title">
+          <p>
+            Weather & Forecast
+            <i class="fas fa-cloud-sun-rain" style="font-size: 36px"></i>
+            Application
+          </p>
+        </div>
+        <div class="text--icons">
+          <ul>
+            <li><i class="fab fa-instagram" style="font-size: 40px"></i></li>
+            <li><i class="fab fa-telegram" style="font-size: 40px"></i></li>
+            <li><i class="fab fa-linkedin" style="font-size: 40px"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="show">
+        <div class="show--box">
+          <p class="show--box__counter--name">CITY</p>
+          <p class="show--box__city--name">COUNTRY</p>
+          <p class="show--box__temperers">TEMPERERS</p>
+          <img class="icons" src="" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

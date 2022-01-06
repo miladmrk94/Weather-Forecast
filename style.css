@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url("./Ubuntu-Bold.ttf");
+}
+
+* {
+  color: #4a403a;
+  font-family: "Ubuntu-Bold";
+}
+
+body {
+  background-color: #efefef;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu {
+  background-color: #ffc069;
+  border-radius: 2rem;
+  margin: 5rem 18rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 2fr));
+  display: grid;
+  justify-content: center;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 11px 4px;
+}
+
+@media (max-width: 350px) {
+  .menu {
+    margin: 0.5rem;
+  }
+
+  .text--title p {
+    font-size: 0.5rem;
+  }
+  .show {
+    border-bottom-left-radius: 2rem;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+  .menu {
+    margin: 2.5rem;
+  }
+  .show {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 703px) {
+  .menu {
+    margin: 4rem;
+  }
+  .show {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+}
+
+@media (min-width: 704px) and (max-width: 1600px) {
+  .menu {
+    margin: 4rem;
+  }
+  .show {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+}
+
+@media (min-width: 1600px){
+    .menu {
+      margin: 5rem 16rem;
+    }
+    .show {
+      border-top-right-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+    }
+  }
+
+.text {
+  padding: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text--input {
+}
+
+.submit {
+  position: relative;
+  height: 10%;
+  align-self: stretch;
+  text-align: center;
+}
+
+#city-name {
+  padding: 0.5rem;
+  border: 0;
+  outline: 0.2rem solid #a45d5d;
+  border-radius: 5em;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+}
+
+#get {
+  display: inline-block;
+  width: auto;
+  width: 6rem;
+  height: 3rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  color: #efefef;
+  background-color: #a45d5d;
+  border: 0;
+  outline: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#get:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.text--title p {
+  font-size: 3rem;
+  text-shadow: 2px 3px 6px rgba(54, 44, 44, 0.4);
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+/* ------------------------------- */
+.show {
+  display: flex;
+  flex-grow: 20px;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: #4a403a;
+  width: 100%;
+  background-image: url("./Wallpaper\ \(82\).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.show--box {
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 90%;
+  border-radius: 1.5rem;
+  background-image: linear-gradient(
+    to right bottom,
+    #1a698b,
+    #166c88,
+    #196f85,
+    #1f7181,
+    #27737d
+  );
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.show--box__counter--name {
+  margin: 0;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+.show--box__city--name {
+  margin: 0;
+
+  font-size: 1.1rem;
+  color: rgb(255, 255, 255);
+}
+
+.show--box__temperers {
+  margin: 0;
+
+  font-size: 5rem;
+  background: -webkit-linear-gradient(#f5f5fd, #ebdede);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.show--box__icon {
+  text-shadow: -1px 2px 3px rgb(54 44 44 / 40%);
+  margin: 0;
+}
